@@ -1,0 +1,245 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 14px;
+}
+header nav ul li{
+    display: inline;
+    justify-content: space-between;
+    text-decoration: none;
+    margin-left: 30px;
+}
+.sub-nav{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 12px;
+}
+.sub-nav span{
+    color: blue;
+}
+.hero{
+    text-align: center;
+    /* padding-top: 40px; */
+}
+.hero h1{
+    margin-bottom: 30px;
+}
+.link{
+    margin-top: 12px;
+}
+.link a{
+    margin: 10px;
+}
+.hero img{
+    width: 100%;
+}
+.sub-hero{
+    background-color: black;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.btn1{
+    border-radius: 40px;
+    font-size: 16px;
+    padding: 1rem 2rem;
+    background-color: dodgerblue;
+    border: 2px solid dodgerblue;
+    color: dodgerblue;
+    cursor: pointer;
+    background: transparent;
+    letter-spacing: 3px;
+    transition: 1.5s;
+    text-transform: uppercase;
+}
+.btn2{
+    border-radius: 40px;
+    display: inline-block;
+    font-size:  16px;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    background-color: dodgerblue;
+    border: 2px solid dodgerblue;
+    color: dodgerblue;
+    cursor: pointer;
+    background: transparent;
+    letter-spacing: 3px;
+    transition: 1.5s;
+    text-transform: uppercase;
+}
+.btn1:hover{
+    box-shadow: 0 5px 50px 0 dodgerblue inset, 0 5px 50px 0 dodgerblue inset;
+    background-color: dodgerblue;
+    color: black;
+}
+.btn2:hover{
+    box-shadow: 0 5px 50px 0 dodgerblue inset, 0 5px 50px 0 dodgerblue inset;
+    background-color: dodgerblue;
+    color: black;
+}
+.second{
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.second img{
+    height: 300px;
+}
+.main{
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 49%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 4px ;
+}
+.main img{
+    height: 300px;
+}
+.box{
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 49%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 4px ;
+    
+}
+.box img{
+    height: 300px;
+    margin-top: 10px;
+}
+.box1{
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 49%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 4px ;
+    
+}
+.box1 img{
+    height: 300px;
+    margin-top: 10px;
+}
+.box2{
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 49%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 4px ;
+    
+}
+.box2 img{
+    height: 300px;
+    margin-top: 10px;
+}
+
+.main_container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box3{
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 49%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 4px ;
+}
+.box3 img{
+    height: 300px;
+    margin-top: 10px;
+}
+.box4{
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 49%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 4px ;
+}
+.box4 img{
+    height: 300px;
+    margin-top: 10px;
+}
+.hero-container{
+    display: flex;
+    justify-content: space-evenly;
+} 
+.box5{
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 49%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 4px ;
+}
+.box5 img{
+    height: 300px;
+    margin-top: 10px;
+}
+.box6{
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 49%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 4px ;
+}
+.box6 img{
+    height: 300px;
+    margin-top: 10px;
+}
+.pods{
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    margin-top: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.footer li{
+    list-style: none;
+}

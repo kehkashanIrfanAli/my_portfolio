@@ -1,0 +1,722 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<style>
+     body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+    .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #403f3f;
+            
+        }
+        .navbar-left {
+            display: flex;
+            align-items: center;
+            
+        }
+        .navbar-left img {
+            height: 30px;
+            margin-right: 15px;
+        }
+    .navbar a{
+        text-decoration: none;
+        color: white;
+        margin: 0px 10px;
+    }
+    .navbar a:hover{
+        color: #007aff;
+    }
+    .text{
+        text-align: center;
+        background-color: rgb(250, 245, 245);
+    }
+    .text p{
+        font-size: 17px;
+    }
+    /* photo1 section */
+    .photo1{
+        position: relative;
+        height: 100vh;
+        background: url("https://www.apple.com/v/iphone-16-pro/d/images/meta/iphone-16-pro_overview__ejy873nl8yi6_og.png?202412061303") no-repeat center /cover; 
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .photo1 h1 {
+            font-size: 55px;
+            margin: 0;
+        }
+        .photo1 p {
+            font-size: 25px;           
+        }
+
+        .photo1 .button1 {
+            display: flex;
+            gap: 15px;
+        }
+        .photo1 button {
+            padding: 10px 20px;
+            font-size: 15px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .photo1 button.learn-more {
+            background-color: #007aff;
+            color: white;
+        }
+        .photo1 button.learn-more:hover {
+            background-color: #005bb5;
+        }
+        .photo1 button.buy {
+            background-color: transparent;
+            color: #007aff;
+        }
+        .photo1 button.buy:hover {
+            background-color: #007aff;
+            color: white;
+        }
+
+        /* photo2 section */
+    .photo2{
+        position: relative;
+        height: 100vh;
+        background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj36s67CqvkMDl-g6akso-1kiYMxDxcqKMXd_1HY6bFgsDGep_M0gnE8wUGYo8q9YxEzt9ANurRR4E__SA5rrbyY6jN6rj1LRGSj6uQ8pycWv6xHE8bY1pg3ovgyDPL_OX_lsJK2d2KN5giYkJxipkdwd4HknL3QOl6COH9kXgwMNhHSlbRx6Elfe99xKE/w0/Download%20iPhone%2016%20Series%20Wallpapers%201500%20X%201000.webp") no-repeat center /cover; 
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .photo2 h1 {
+            font-size: 55px;
+            margin: 0;
+        }
+        .photo2 p {
+            font-size: 25px;           
+        }
+
+        .photo2 .button2 {
+            display: flex;
+            gap: 15px;
+        }
+        .photo2 button {
+            padding: 10px 20px;
+            font-size: 15px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .photo2 button.learn-more {
+            background-color:white;
+            color: black;
+        }
+        .photo2 button.learn-more:hover {
+            background-color: rgb(241, 241, 241);
+        }
+        .photo2 button.buy {
+            background-color: none;
+            color: black;
+        }
+        .photo2 button.buy:hover {
+            background-color: black;
+            color:white;
+        }
+
+        /* photo3 section */
+    .photo3{
+        position: relative;
+        height: 100vh;
+        background: url("https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/holiday-og-image-202411?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1728401746305") no-repeat center /cover; 
+        color: black;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+    }
+    .photo3 h1 {
+            font-size: 55px;
+            margin: 0;
+        }
+        .photo3 p {
+            font-size: 25px;           
+        }
+
+        .photo3 .button3 {
+            display: flex;
+            gap: 15px;
+        }
+        .photo3 button {
+            padding: 10px 20px;
+            font-size: 15px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .photo3 button.Shop-gifts {
+            background-color: #007aff;
+            color: white;
+        }
+        .photo3 button.Shop-gifts:hover {
+            background-color: #005bb5;
+        }
+
+        /* new section 1*/
+        .abc{
+            display: flex;
+            height: 100vh;
+        }
+        .section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #000;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            justify-content: space-between;
+        }
+
+        .left-section1 {
+            background: url('https://www.apple.com/v/ipad-air/x/images/meta/ipad-air_overview__ofpu7ozyzl6m_og.png?202412051229') no-repeat center center/cover;
+            justify-content: flex-start;
+        }
+
+        .right-section1 {
+            background: url('https://www.apple.com/v/airpods-pro/n/images/hearing-health/hero/hearing-hero_startframe__f8es0fmuxgq6_large.jpg') no-repeat center center/cover;
+            color: white;
+            justify-content: end;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin: 0 0 20px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 15px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .learn-more {
+            background-color: #007aff;
+            color:  black;
+        }
+
+        .learn-more:hover {
+            background-color: #005bb5;
+        }
+
+        .buy {
+            background-color: transparent;
+            color:  #005bb5;
+        }
+
+        .buy:hover {
+            background-color: #6b6a6a;
+        }
+
+
+        /* new section 2*/
+        .container1{
+            display: flex;
+            height: 100vh;
+        }
+        .section2 {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            justify-content: space-between;
+        }
+        .imgg{
+            display: flex;
+        }
+        .left-section2 {
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTMlnIy5BsaQtqf2mIPZeKRuL16pvmFtoA9g&s') no-repeat center center/cover;
+            justify-content: flex-start;
+            
+        }
+
+        .right-section2 {
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvZjfR2xKLTb-Jxq33v9uAPgT_k7VEO37mkw&s') no-repeat center center/cover;
+            color: #000000;
+            justify-content: start;
+        }
+
+        .two.h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px;
+        }
+
+        .two.p {
+            font-size: 1.2rem;
+            margin: 0 0 20px;
+        }
+
+        .two.buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 15px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .learn-more2 {
+            background-color: #007aff;
+            color: rgb(0, 0, 0);
+        }
+
+        .learn-more2:hover {
+            background-color: #005bb5;
+        }
+
+        .buy2 {
+            background-color: #f5f5f5;
+            color:  #007aff;
+        }
+
+        .buy2:hover {
+            background-color: #ffffff;
+            color: black;
+        }
+
+        /* new section 3 */
+        .container3{
+            display: flex;
+            height: 100vh;
+        }
+        .section3 {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            justify-content: space-between;
+        }
+
+        .left-section3 {
+            background: url("https://images.macrumors.com/t/ZZXX-6V4B3kUrRM3KXsp9h_tc_Q=/1600x0/article-new/2024/05/apple-trade-in-2024.jpg") no-repeat center center/cover;
+            justify-content: flex-start;
+        }
+
+        .right-section3 {
+            background: url('https://techcrunch.com/wp-content/uploads/2019/07/card__fhxgfbpnt7e6_large_2x.jpg') no-repeat center center/cover;
+            justify-content: start
+        }
+
+        .three.h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px;
+        }
+
+
+        .three.buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 15px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .learn-more3 {
+            background-color: #007aff;
+            color:  white;
+        }
+
+        .learn-more3:hover {
+            background-color: #005bb5;
+        }
+
+        .buy3 {
+            background-color: transparent;
+            color:  #005bb5;
+        }
+
+        .buy3:hover {
+            background-color: #6b6a6a;
+        }
+        footer{
+            margin: 0 auto;
+            padding-left:  120px ;
+            padding-right:  100px ;
+            padding-top: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        footer h6{
+            font-size: 13px;
+        }
+        .footer {
+            font-size: 12px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .footer h3 {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer ul li {
+            margin-bottom: 8px;
+        }
+        .footer ul li a {
+            color: #0071e3;
+            text-decoration: none;
+        }
+        .footer ul li a:hover {
+            text-decoration: underline;
+        }
+        .footer .footer-columns {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .footer .footer-column {
+            flex: 1;
+            min-width: 150px;
+            margin-right: 20px;
+        }
+</style>
+<body></body>
+    <!-- navbar -->
+    <div class="navbar">
+          <div class="navbar-left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo">
+            <a href="#">Store</a></li>
+            <a href="#">Mac</a></li>
+            <a href="#">iPad</a></li>
+            <a href="#">iPhone</a></li>
+            <a href="#">Watch</a></li>
+            <a href="#">Vision</a></li>
+            <a href="#">AirPods</a></li>
+            <a href="#">TV & Home</a></li>
+            <a href="#">Entertainment</a></li>
+            <a href="#">Accessories</a></li>
+            <a href="#">Support</a></li>
+          </div>
+          <div class="navbar-right">
+            <a href="#">Search</a>
+            <a href="#">Cart</a>
+          </div>
+      </div>
+      <br><br>
+      <div class="text">
+        <p>We’re donating $5 to the Global Fund for every purchase made with Apple Pay at Apple. Through 12/8.1 Shop
+        </p>
+      </div>
+
+
+       <!-- first div work  -->
+      <div class="photo1">
+        <h1>iPhone 16 Pro</h1>
+        <p>Hello, Apple Intelligence.</p>
+        <div class="button1">
+            <button class="learn-more">Learn more</button>
+            <button class="buy">Buy</button>
+        </div>
+      </div>
+      <br>
+
+
+       <!-- second div work  -->
+       <div class="photo2">
+        <h1>iPhone 16 </h1>
+        <p>Hello, Apple Intelligence.</p>
+        <div class="button2">
+            <button class="learn-more">Learn more</button>
+            <button class="buy">Buy</button>
+        </div>
+      </div>
+      <br>
+
+
+<!-- third div work  -->
+<div class="photo3">
+    <h1>Gift Magic.</h1>
+    <p>Make their holiday wish come true.</p>
+    <div class="button3">
+        <button class="Shop-gifts">Shop Gifts</button>
+    </div>
+  </div>
+  <br>
+
+
+<!-- fourth div work  -->
+<!-- Left Section -->
+<div class="abc">
+<div class="section left-section1">
+    <h1>iPad air</h1>
+    <p>Two sizes. Faster chip. Does it all.</p>
+    <div class="buttons">
+        <button class="learn-more">Learn more</button>
+        <button class="buy">Buy</button>
+    </div>
+</div>
+
+<!-- Right Section -->
+<div class="section right-section1">
+    <h1>AirPods Pro 2</h1>
+    <p>Now with a Hearing Aid feature.<sup>2</sup></p>
+    <div class="buttons">
+        <button class="learn-more">Learn more</button>
+        <button class="buy">Buy</button>
+    </div>
+</div>
+</div>
+<br>
+
+
+<!-- fifth div work  -->
+<!-- Left Section -->
+<div class="container1">
+    <div class="section2 left-section2">
+        <div class="imgg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" style=" height: 40px; width: 40px; margin-right: 15px;">
+        <h1 class="two">WATCH</h1>
+        </div>
+        <h6 class="two">SERIES 10</h6>
+        <p class="two">Thinstant Classic.</p>
+        <div class="buttons2">
+            <button class="learn-more2">Learn more</button>
+            <button class="buy2">Buy</button>
+        </div>
+    </div>
+    <!-- Right Section -->
+    <div class="section right-section2">
+        <h1 class="two">MacBook Air</h1>
+        <p class="two">Lean. Mean. M3 machine.</p>
+        <div class="buttons2">
+            <button class="learn-more2">Learn more</button>
+            <button class="buy2">Buy</button>
+        </div>
+    </div>
+    </div>
+    <br>
+
+    <!-- sixth div work  -->
+     <!-- Left Section -->
+<div class="container3">
+    <div class="section3 left-section3">
+        <div class="imgg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" style=" height: 40px; width: 40px; margin-right: 15px;">
+        <h1 class="three">Trade In</h1>
+        </div>
+        <h5>Get $180-$650 in credit when you</h5>
+        <h5>trade in iPhone 12 or higher.<sup>3</sup></h5>
+        <div class="buttons3">
+            <button class="learn-more3">Get your estimate</button>
+            
+        </div>
+    </div>
+    
+    <!-- Right Section -->
+    <div class="section3 right-section3">
+        <div class="imgg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo" style=" height: 40px; width: 40px; margin-right: 15px;">
+        <h1 class="three">Card</h1>
+        </div>
+        <h5>Get upto 3% daily cashback</h5>
+        <h5>with every purchase.</h5>
+        <div class="buttons3">
+            <button class="learn-more3">Learn more</button>
+            <button class="buy3">Buy</button>
+        </div>
+    </div>
+</div>
+    <br>
+    
+</body>
+
+<footer>
+    <h6>1. Through December 8, 2024, Apple will donate $5 for every purchase made with Apple Pay on apple.com, in the Apple Store app, or at an Apple Store. Donations are limited to a maximum of three million dollars ($3,000,000). The donation goes to the Global Fund to fight AIDS and help fund critical health programs that save lives.</h6>
+    <h6>Apple Pay is a service provided by Apple Payments Services LLC, a subsidiary of Apple Inc. Neither Apple Inc. nor Apple Payments Services LLC is a bank. Any card used in Apple Pay is offered by the card issuer.</h6>
+    <h6>To use Apple Pay you need a supported card from a participating card issuer. To check if your card is compatible with Apple Pay, contact your card issuer.</h6>
+    <h6>Apple Pay is not available in all markets. View Apple Pay countries and regions.</h6>
+    <h6>Features are subject to change. Some features, applications, and services may not be available in all regions or all languages and may require specific hardware and software. For more information, see Feature Availability.</h6>
+    <h6>2. Hearing Aid and Hearing Test: The Hearing Aid feature has received FDA authorization. The Hearing Test and Hearing Aid features are supported on AirPods Pro 2 with the latest firmware paired with a compatible iPhone or iPad with iOS 18 or iPadOS 18 and later and are intended for people 18 years old or older. The Hearing Aid feature is also supported on a compatible Mac with macOS Sequoia and later. It is intended for people with perceived mild to moderate hearing loss.</h6>
+    <h6>Hearing Protection: The Hearing Protection feature works with AirPods Pro 2 with the latest firmware when paired with a compatible iPhone, iPad, or Mac with iOS 18, iPadOS 18, or macOS Sequoia and later. Feature is only available in the U.S. and Canada. See support.apple.com/120850 for total attenuation and more information. The Hearing Protection feature is not suitable for protection against extremely loud impulse sounds, such as gunfire, fireworks, or jackhammers, or against sustained sounds louder than 110 dBA.</h6>
+    <h6>3. Trade‑in values will vary based on the condition, year, and configuration of your eligible trade‑in device. Not all devices are eligible for credit. You must be at least the age of majority to be eligible to trade in for credit or for an Apple Gift Card. Trade‑in value may be applied toward qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In‑store trade‑in requires presentation of a valid photo ID (local law may require saving this information). Offer may not be available in all stores, and may vary between in‑store and online trade‑in. Some stores may have additional requirements. Apple or its trade‑in partners reserve the right to refuse, cancel, or limit quantity of any trade‑in transaction for any reason. More details are available from Apple’s trade-in partner for trade‑in and recycling of eligible devices. Restrictions and limitations may apply.</h6>
+    <h6>To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank USA, Salt Lake City Branch.</h6>
+    <h6>If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions about Apple Card.</h6>
+    <h6>Learn more about how Apple Card applications are evaluated at support.apple.com/kb/HT209218.</h6>
+    <h6>Apple Intelligence is available in beta on all iPhone 16 models, iPhone 15 Pro, iPhone 15 Pro Max, iPad mini (A17 Pro), and iPad and Mac models with M1 and later, with Siri and device language set to U.S. English, as part of an iOS 18, iPadOS 18, and macOS Sequoia update. English (Australia, Canada, Ireland, New Zealand, South Africa, UK) language support available this December. Some features, additional platforms, and support for additional languages, like Chinese, English (India, Singapore), French, German, Italian, Japanese, Korean, Portuguese, Spanish, Vietnamese, and others, will be coming over the course of the next year.</h6>
+    <h6>A subscription is required for Apple Arcade, Apple Fitness+, Apple Music, and Apple TV+.</h6>
+    <h6>Features are subject to change. Some features, applications, and services may not be available in all regions or all languages.</h6>
+    <hr><br>
+    <div class="footer">
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>Shop and Learn</h3>
+                <ul>
+                    <li><a href="#">Store</a></li>
+                    <li><a href="#">Mac</a></li>
+                    <li><a href="#">iPad</a></li>
+                    <li><a href="#">iPhone</a></li>
+                    <li><a href="#">Watch</a></li>
+                    <li><a href="#">Vision</a></li>
+                    <li><a href="#">AirPods</a></li>
+                    <li><a href="#">TV & Home</a></li>
+                    <li><a href="#">AirTag</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-column">
+                <h3>Account</h3>
+                <ul>
+                    <li><a href="#">Manage Your Apple Account</a></li>
+                    <li><a href="#">Apple Store Account</a></li>
+                    <li><a href="#">iCloud.com</a></li>
+                </ul>
+                <h3>Entertainment</h3>
+                <ul>
+                    <li><a href="#">Apple One</a></li>
+                    <li><a href="#">Apple TV+</a></li>
+                    <li><a href="#">Apple Music</a></li>
+                    <li><a href="#">Apple Arcade</a></li>
+                    <li><a href="#">Apple Fitness+</a></li>
+                    <li><a href="#">Apple News+</a></li>
+                    <li><a href="#">Apple Podcasts</a></li>
+                    <li><a href="#">Apple Books</a></li>
+                    <li><a href="#">App Store</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-column">
+                <h3>Apple Store</h3>
+                <ul>
+                    <li><a href="#">Find a Store</a></li>
+                    <li><a href="#">Genius Bar</a></li>
+                    <li><a href="#">Today at Apple</a></li>
+                    <li><a href="#">Group Reservations</a></li>
+                    <li><a href="#">Apple Camp</a></li>
+                    <li><a href="#">Apple Store App</a></li>
+                    <li><a href="#">Certified Refurbished</a></li>
+                    <li><a href="#">Apple Trade In</a></li>
+                    <li><a href="#">Financing</a></li>
+                    <li><a href="#">Carrier Deals at Apple</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Shopping Help</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-column">
+                <h3>For Business</h3>
+                <ul>
+                    <li><a href="#">Apple and Business</a></li>
+                    <li><a href="#">Shop for Business</a></li>
+                </ul>
+                <h3>For Education</h3>
+                <ul>
+                    <li><a href="#">Apple and Education</a></li>
+                    <li><a href="#">Shop for K-12</a></li>
+                    <li><a href="#">Shop for College</a></li>
+                </ul>
+                <h3>For Healthcare</h3>
+                <ul>
+                    <li><a href="#">Apple in Healthcare</a></li>
+                    <li><a href="#">Mac in Healthcare</a></li>
+                    <li><a href="#">Health on Apple Watch</a></li>
+                    <li><a href="#">Health Records on iPhone and iPad</a></li>
+                </ul>
+                <h3>For Government</h3>
+                <ul>
+                    <li><a href="#">Shop for Government</a></li>
+                    <li><a href="#">Shop for Veterans and Military</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-column">
+                <h3>Apple Values</h3>
+                <ul>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Environment</a></li>
+                    <li><a href="#">Inclusion and Diversity</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Racial Equity and Justice</a></li>
+                    <li><a href="#">Supply Chain</a></li>
+                </ul>
+                <h3>About Apple</h3>
+                <ul>
+                    <li><a href="#">Newsroom</a></li>
+                    <li><a href="#">Apple Leadership</a></li>
+                    <li><a href="#">Career Opportunities</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Ethics & Compliance</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact Apple</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr>
+   <center> <p style="font-size: medium; " >Copyright © 2024 Apple Inc. |All rights reserved.| Privacy Policy | Terms of Use | Sales and Refunds | Legal | Site Map</p></center>
+</footer>
+
+</html>
+
+

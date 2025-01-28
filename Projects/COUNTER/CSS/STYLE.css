@@ -1,0 +1,80 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 280px;
+}
+
+/* Title styling */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Counter display */
+.counter {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+}
+
+/* Button container */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Button styles */
+.buttons button {
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.2s ease;
+}
+
+/* Hover effects */
+.buttons button:hover {
+    background-color: #45a049;
+}
+
+.buttons button:active {
+    background-color: #3e8e41;
+}
+
+/* Reset button */
+.buttons button:nth-child(2) {
+    background-color: #f44336;
+}
+
+.buttons button:nth-child(2):hover {
+    background-color: #e53935;
+}
+
+/* Disabled state */
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
